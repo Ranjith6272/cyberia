@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art and Heritage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/flag1.png" type="image/gif" />
+
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">Heritage</a>
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./img/onam.png" alt="flag" id="color">
+        <img src="./img/people.png" alt="flag" id="people">
+        <h2 id="text">ART AND HERITAGE</h2>
+        <a href="https://ranjith6272.github.io/explore/" id="btn">Explore</a>
+        <img src="./img/india.png" alt="india" id="india">
+        
+    </section>
+    <div class="sec">
+        <h2>ART AND HERITAGE IN INDIA</h2>
+        <p>UNESCO World Heritage Convention which was established in 1972, 
+            recognised various sites of cultural and natural importance around the world.
+            After the latest addition to the UNESCO World Heritage Sites list, 
+            India has now 38 World Heritage Sites, and that makes India with the 6th largest number of World Heritage Sites in the world! 
+            There are 30 cultural sites, 7 natural sites and 1 mixed as recognised by  <br> <br>
+            India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress since Independence. As the 7th largest country in the world, India stands apart 
+            from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity.
+             Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer,
+             tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. <br><br>
+             The Ministry of Culture plays a vital role in the preservation and promotion of art and culture. Its aim is to develop ways and means by which basic cultural and aesthetic values and perceptions remain active and dynamic among the people. It also undertakes programmes for the promotion of various manifestations of contemporary art. The Department is a nodal agency for commemorating significant events and celebrating centenaries of great artists.
+        </p>
+    </div>
+    
+    <script>
+        let color=document.getElementById('color');
+        let people=document.getElementById('people');
+        let india=document.getElementById('india');
+        let text=document.getElementById('text');
+        let btn=document.getElementById('btn');
+        
+        window.addEventListener('scroll',function(){
+            let value =window.scrollY;
+            color.style.left=value*0.25+'px';
+            people.style.right=value*1+'px';
+            
+            text.style.marginTop=value*1+'px';
+        })
+    
+    </script>
+    
+    
+</body>
+</html>
